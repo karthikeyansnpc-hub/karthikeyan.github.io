@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Karthikeyan M — Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<!-- HOME -->
+<section id="home">
+  <div class="container">
+    <div class="hero-left">
+      <div class="name">KARTHIKEYAN M</div>
+      <div class="subtitle">Developer (Fresher)</div>
+      <p class="lead">I build modern web apps and backend services. I focus on clean UX, performance, and maintainable code — HTML, CSS, JS, Node.js, Python, SQL/MongoDB.</p>
+    </div>
+
+    <div class="hero-right card">
+      <h3 style="color:var(--accent); margin-top:0">Quick Info</h3>
+      <p style="color:var(--muted)"><strong>Phone:</strong> +91 99420 63019<br>
+      <strong>Email:</strong> karthikeyan.supe@gmail.com<br>
+      <strong>Location:</strong> Coimbatore, Tamil Nadu, India</p>
+
+      <h3 style="margin-top:14px">Education</h3>
+      <p style="color:var(--muted)">BSc Information Technology — Kongunadu Arts & Science College (2022–2025)</p>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="card" style="flex:1">
+      <h2>About Me</h2>
+      <p style="color:var(--muted)">I am a fresher developer passionate about building responsive web applications, APIs, and simple ML-assisted utilities. I like to keep projects simple, well-tested, and well-documented.</p>
+
+      <h3>Core Skills</h3>
+      <ul>
+        <li>Frontend: HTML, CSS, JavaScript, Bootstrap, React</li>
+        <li>Backend: Node.js, Express.js, Python (Flask)</li>
+        <li>Database: MySQL, MongoDB</li>
+        <li>Tools: Git, GitHub</li>
+      </ul>
+
+      <h3>Soft Skills</h3>
+      <ul>
+        <li>Time Management</li>
+        <li>Adaptability</li>
+        <li>Critical Thinking</li>
+        <li>Communication</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="card" style="width:100%">
+      <h2>Projects</h2>
+
+      <h3>E-Commerce Website</h3>
+      <p style="color:var(--muted)">Built a full-stack e-commerce app: product listings, authentication, cart & orders. Tech: HTML/CSS/JS, Node.js, SQL.</p>
+
+      <h3>Logo Detection App</h3>
+      <p style="color:var(--muted)">Implemented an app to detect logos from uploaded images, using JavaScript front-end and Python backend for detection; results stored in MySQL.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-card" role="region" aria-label="Contact form">
+    <div class="glow" aria-hidden="true"></div>
+
+    <h2>Contact Me</h2>
+
+    <form id="contactForm" autocomplete="on">
+      <label for="name">Full name</label>
+      <input id="name" name="from_name" type="text" placeholder="Your full name" required>
+
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="text" placeholder="+91 9XXXXXXXXX" required>
+
+      <label for="purpose">Purpose</label>
+      <textarea id="purpose" name="purpose" placeholder="How can I help?" required></textarea>
+
+      <button id="submitBtn" class="btn" type="submit">
+        <span id="btnText">Submit</span>
+        <span id="spinner" style="display:none; margin-left:10px;" aria-hidden="true" class="spinner"></span>
+      </button>
+
+      <div id="msg" class="msg" role="status" aria-live="polite"></div>
+    </form>
+
+    <p style="text-align:center; color:var(--muted); font-size:13px; margin-top:12px">You will receive a confirmation if you provided a valid email.</p>
+  </div>
+</section>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- Main JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
